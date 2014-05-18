@@ -10,7 +10,6 @@
 				<pvLink c1="KefedModel" role="elements" pv2="KefedModelElement" c2="KefedModelElement"/>
 				<pvLink c1="KefedModel" role="edges" pv2="KefedModelEdge" c2="KefedModelEdge"/>
 				<pvLink c1="KefedModel" role="curators" pv2="Curator" c2="KefedCurator"/>
-				<pvLink c1="KefedModel" role="reference" pv2="Reference" c2="LiteratureCitation"/>
 				<pvLink c1="KefedModel" role="ooevv" pv2="OoevvElementSet" c2="OoevvElementSet"/>
 				<pvLink c1="PlannedExptProtocol" role="question" pv2="Question" c2="Question"/>
 			</pvLinks>
@@ -40,12 +39,6 @@
 				<class name="KefedCurator"/>
 			</classes>
 		</primitive>
-		<primitive name="Reference" nullable="true">
-			<classes>
-				<class name="ViewTable"/>
-				<class name="LiteratureCitation"/>
-			</classes>
-		</primitive>
 		<primitive name="Question">
 			<classes>
 				<class name="ViewTable"/>
@@ -53,9 +46,8 @@
 			</classes>
 		</primitive>
 	</primitives>
-	<vpdmfLabel format="KEfED: $1$, expt: $2$, version: $3$" />
+	<vpdmfLabel format="KEfED Expt: $2$, version: $3$" />
 	<indexElements>
-		<indexElement pos="1" p="Reference" c="ViewTable" a="vpdmfLabel" />
 		<indexElement pos="2" p="KefedModel" c="KefedModel" a="exptId" />
 		<indexElement pos="3" p="KefedModel" c="KefedModel" a="version" />
 		<indexElement pos="4" p="KefedModelElement" c="KefedModelElement" a="uuid" />
